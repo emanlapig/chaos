@@ -1,9 +1,9 @@
 {
-  "name": "bGem Chaos",
+  "name": "bGemChaos",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emanlapig/chaos.git"
+    "url": "https://github.com/emanlapig/webappTmpl.git"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
