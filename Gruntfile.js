@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'js/min/Model.min.js' : 'js/Model.js',
-          'js/min/View.min.js' : 'js/View.js',
+          //'js/min/View.min.js' : 'js/View.js',
           'js/min/Controller.min.js' : 'js/Controller.js',
         }
       }

@@ -8,9 +8,9 @@ var M = {
 
 			}
 		},
-		sample: {
+		key: {
 			title: "Custom Font",
-			selector: "sample",
+			selector: "key",
 			init: function() {
 
 			}
@@ -28,6 +28,6 @@ var M = {
 // pages registry
 var pages = [
 	M.pages.dashboard,
-	M.pages.sample,
+	M.pages.key,
 	M.pages.settings
 ];
