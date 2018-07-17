@@ -9,6 +9,6 @@ var C = {
 		});
 		$( "#close-nav" ).on( 'click', V.close_menu );
 		$( "#nav-menu, #header" ).on( 'touchmove', function(e) { e.preventDefault(); } );
-		V.go_to_page( pages[0].selector );
+		V.go_to_page( nav_pages[0].selector );
 	}
 };

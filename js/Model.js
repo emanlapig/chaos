@@ -26,7 +26,7 @@ var M = {
 };
 
 // pages registry
-var pages = [
+var nav_pages = [
 	M.pages.dashboard,
 	M.pages.key,
 	M.pages.settings
