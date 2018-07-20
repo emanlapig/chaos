@@ -1,2 +1,31 @@
 // app stylesheet
 
+@font-face {
+	font-family: 'Schueler';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Schueler'), url(../../fonts/Schueler.ttf) format('truetype');
+}
+
+.schueler-reg {
+	font-family: 'Schueler';
+	text-align: right;
+}
+.schueler-mono {
+	font-family: 'Schueler';
+	text-align: right;
+}
+p.schueler-reg, p.schueler-mono {
+	font-size: 24px;
+	line-height: 28px;
+}
+h3.schueler-reg, h3.schueler-mono {
+	font-size: 26px;
+}
+#nav-menu a.schueler-reg {
+	font-family: 'Schueler';
+	font-size: 26px;
+}
+#nav-menu a.schueler-mono {
+	font-family: 'Schueler';
+}

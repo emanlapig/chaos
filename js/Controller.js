@@ -8,6 +8,10 @@ var C = {
 		M.load_settings();
 		M.apply_settings();
 
+		if ( M.settings.schueler ) {
+			M.pages.settings.toggle_eno_font();
+		}
+
 		// init first page
 		$( ".burger" ).on( 'click', V.open_menu );
 		$( ".cog" ).on( 'click', function(e) {

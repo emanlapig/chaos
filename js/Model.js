@@ -28,13 +28,23 @@ var M = {
 			title: "Settings",
 			selector: "settings",
 			init: function() {
+				// bind input events
 				$( "#hdr-font" ).on( 'click', function(e) {
 					M.pages.settings.toggle_hdr_font();
 					M.settings.hdr_eno = ( M.settings.hdr_eno )? false : true;
 					M.save_settings();
 				});
+				$( "#eno-font" ).on( 'click', function(e) {
+					M.settings.schueler = ( M.settings.schueler )? false : true;
+					M.save_settings();
+					M.pages.settings.toggle_eno_font();
+				})
+				// check saved settings
 				if ( M.settings.hdr_eno ) {
 					$( "#hdr-font" ).attr( "checked", "checked" );
+				}
+				if ( M.settings.schueler ) {
+					$( "#eno-font" ).attr( "checked", "checked" );
 				}
 			},
 			toggle_hdr_font: function(e) {
@@ -64,11 +74,21 @@ var M = {
 						$( hdr_reg[i] ).removeClass( "enoch-reg" );
 					}
 				}
+			},
+			toggle_eno_font: function(e) {
+				if ( M.settings.schueler ) {
+					$( ".enoch-mono" ).removeClass( "enoch-mono" ).addClass( "schueler-mono" );
+					$( ".enoch-reg" ).removeClass( "enoch-reg" ).addClass( "schueler-reg" );
+				} else {
+					$( ".schueler-mono" ).removeClass( "schueler-mono" ).addClass( "enoch-mono" );
+					$( ".schueler-reg" ).removeClass( "schueler-reg" ).addClass( "enoch-reg" );
+				}
 			}
 		}
 	},
 	settings: {
-		hdr_eno: false
+		hdr_eno: false,
+		schueler: false
 	},
 	save_settings: function() {
 		window.localStorage.setItem( "settings", JSON.stringify( M.settings ) );
