@@ -1,6 +1,13 @@
 // Model.js
 var M = {
 	pages: {
+		init: function( page ) {
+			var page = this[ page ];
+			if ( M.settings.hdr_eno ) {
+				$( "#header h2" ).text( page.title.split( "" ).reverse().join( "" ) );
+			}
+			page.init();
+		},
 		dashboard: {
 			title: "Dashboard",
 			selector: "dashboard",
@@ -21,10 +28,63 @@ var M = {
 			title: "Settings",
 			selector: "settings",
 			init: function() {
-
+				$( "#hdr-font" ).on( 'click', function(e) {
+					M.pages.settings.toggle_hdr_font();
+					M.settings.hdr_eno = ( M.settings.hdr_eno )? false : true;
+					M.save_settings();
+				});
+				if ( M.settings.hdr_eno ) {
+					$( "#hdr-font" ).attr( "checked", "checked" );
+				}
+			},
+			toggle_hdr_font: function(e) {
+				var hdr_mono = $( "h2, h3" );
+				for ( var i=0; i<hdr_mono.length; i++ ) {
+					if ( $( hdr_mono[i] ).hasClass( "always" ) ) {
+						continue;
+					}
+					var text = $( hdr_mono[i] ).text();
+					$( hdr_mono[i] ).text( text.split( "" ).reverse().join( "" ) );
+					if ( !$( hdr_mono[i] ).hasClass( "enoch-mono" ) ) {
+						$( hdr_mono[i] ).addClass( "enoch-mono" );
+					} else {
+						$( hdr_mono[i] ).removeClass( "enoch-mono" );
+					}
+				}
+				var hdr_reg = $( "#nav-menu a" );
+				for ( var i=0; i<hdr_reg.length; i++ ) {
+					if ( $( hdr_reg[i] ).hasClass( "always" ) ) {
+						continue;
+					}
+					var text = $( hdr_reg[i] ).text();
+					$( hdr_reg[i] ).text( text.split( "" ).reverse().join( "" ) );
+					if ( !$( hdr_reg[i] ).hasClass( "enoch-reg" ) ) {
+						$( hdr_reg[i] ).addClass( "enoch-reg" );
+					} else {
+						$( hdr_reg[i] ).removeClass( "enoch-reg" );
+					}
+				}
 			}
 		}
-	}
+	},
+	settings: {
+		hdr_eno: false
+	},
+	save_settings: function() {
+		window.localStorage.setItem( "settings", JSON.stringify( M.settings ) );
+	},
+	load_settings: function() {
+		if ( window.localStorage.getItem( "settings" ) ) {
+			M.settings = JSON.parse( window.localStorage.getItem( "settings" ) );
+		} else {
+			M.save_settings();
+		}
+	},
+	apply_settings: function() {
+		if ( M.settings.hdr_eno ) {
+			M.pages.settings.toggle_hdr_font();
+		}
+	},
 };
 
 // pages registry

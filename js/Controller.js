@@ -1,7 +1,13 @@
 // Controller.js
 var C = {
 	init: function() {
+		// build nav
 		V.build_nav();
+
+		// apply saved settings
+		M.load_settings();
+		M.apply_settings();
+
 		// init first page
 		$( ".burger" ).on( 'click', V.open_menu );
 		$( ".cog" ).on( 'click', function(e) {
