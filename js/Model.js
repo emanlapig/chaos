@@ -55,10 +55,16 @@ var M = {
 					}
 					var text = $( hdr_mono[i] ).text();
 					$( hdr_mono[i] ).text( text.split( "" ).reverse().join( "" ) );
-					if ( !$( hdr_mono[i] ).hasClass( "enoch-mono" ) ) {
-						$( hdr_mono[i] ).addClass( "enoch-mono" );
+					var font;
+					if ( !M.settings.schueler ) {
+						font = "enoch-mono";
 					} else {
-						$( hdr_mono[i] ).removeClass( "enoch-mono" );
+						font = "schueler-mono";
+					}
+					if ( !$( hdr_mono[i] ).hasClass( font ) ) {
+						$( hdr_mono[i] ).addClass( font );
+					} else {
+						$( hdr_mono[i] ).removeClass( font );
 					}
 				}
 				var hdr_reg = $( "#nav-menu a" );
@@ -68,10 +74,16 @@ var M = {
 					}
 					var text = $( hdr_reg[i] ).text();
 					$( hdr_reg[i] ).text( text.split( "" ).reverse().join( "" ) );
-					if ( !$( hdr_reg[i] ).hasClass( "enoch-reg" ) ) {
-						$( hdr_reg[i] ).addClass( "enoch-reg" );
+					var font;
+					if ( !M.settings.schueler ) {
+						font = "enoch-reg";
 					} else {
-						$( hdr_reg[i] ).removeClass( "enoch-reg" );
+						font = "schueler-reg";
+					}
+					if ( !$( hdr_reg[i] ).hasClass( font ) ) {
+						$( hdr_reg[i] ).addClass( font );
+					} else {
+						$( hdr_reg[i] ).removeClass( font );
 					}
 				}
 			},
