@@ -2,6 +2,12 @@
 
 @import '../webappTmpl/css/mixins';
 
+//http://paletton.com/#uid=74v0u0klllltmeGpmi0hkoFdkr+
+$base-light: #863D80;
+$base-med: #74276D;
+$base-dark: #590952;
+$highlight: #D2CA78;
+
 @font-face {
 	font-family: 'Schueler';
 	font-style: normal;
@@ -15,6 +21,23 @@
 		position: relative;
 		width: 100%;
 		@include transition( opacity, .5s, ease-in-out, 0s );
+	}
+	.view-ctrl {
+		.btn {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 24px;
+			height: 24px;
+			margin: 0px 2px;
+			background-color: $base-med;
+			color: $base-dark;
+			@include box-sizing( border-box );
+			&.selected, &:hover {
+				background-color: $highlight;
+				color: $base-dark;
+			}
+		}
 	}
 }
 

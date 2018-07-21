@@ -22,6 +22,7 @@ var M = {
 			selector: "enochiana",
 			init: function() {
 				$( "a#key-1" ).on( 'click', function(e) {
+					M.pages.key.current = $( e.target ).attr( "data-key" );
 					V.go_to_page( 'key' );
 				});
 			}
@@ -31,11 +32,22 @@ var M = {
 			selector: "key",
 			init: function() {
 				M.pages.key.go_to_view( M.pages.key.views_registry[ M.settings.key_view ] );
-				$( ".view-ctrl .btn" ).on( 'click', function(e) {
+				var btn = $( ".view-ctrl .btn" );
+				btn.on( 'click', function(e) {
 					var to = M.pages.key.views_registry[ $( e.target ).attr( 'data-view' ) ];
 					M.pages.key.go_to_view( to );
+					$( ".view-ctrl .btn" ).removeClass( "selected" );
+					$( e.target ).addClass( "selected" );
 				});
+				for ( var i=0; i<btn.length; i++ ) {
+					if ( $( btn[i] ).attr( "data-view" ) == M.settings.key_view ) {
+						$( btn[i] ).addClass( "selected" );
+					} else {
+						$( btn[i] ).removeClass( "selected" );
+					}
+				}
 			},
+			current: 0,
 			go_to_view: function( to ) {
 				var from = $( "#key .view" )
 					, current = M.settings.key_view;
@@ -61,13 +73,27 @@ var M = {
 				eno_only: {
 					index: 0,
 					init: function() {
-
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, text = "";
+						for ( var i=0; i<key.content.length; i++ ) {
+							text += key.content[i].eno;
+							text += " ";
+						}
+						$( "#key #eno_only p bdo" ).text( text );
 					}
 				},
 				eno_pronounce: {
 					index: 1,
 					init: function() {
-
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, text = "";
+						for ( var i=0; i<key.content.length; i++ ) {
+							text += key.content[i].eno;
+							text += " ";
+						}
+						$( "#key #eno_pronounce p" ).text( text );
 					}
 				},
 				eng_eno: {

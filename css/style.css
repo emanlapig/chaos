@@ -11,6 +11,21 @@
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
   transition: opacity 0.5s ease-in-out 0s; }
+.page .view-ctrl .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0px 2px;
+  background-color: #74276D;
+  color: #590952;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
+    background-color: #D2CA78;
+    color: #590952; }
 
 .schueler-reg {
   font-family: 'Schueler';
