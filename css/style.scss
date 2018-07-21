@@ -21,6 +21,23 @@ $highlight: #D2CA78;
 		position: relative;
 		width: 100%;
 		@include transition( opacity, .5s, ease-in-out, 0s );
+		&#eng_eno {
+			.word {
+				display: inline-block;
+				margin: 8px 10px;
+				> div {
+					display: block;
+					text-align: center;
+				}
+				.eng {
+					color: #fff;
+				}
+				.eno {
+					font-size: 18px;
+					font-family: 'Muli-Bold';
+				}
+			}
+		}
 	}
 	.view-ctrl {
 		.btn {
@@ -32,6 +49,7 @@ $highlight: #D2CA78;
 			margin: 0px 2px;
 			background-color: $base-med;
 			color: $base-dark;
+			cursor: pointer;
 			@include box-sizing( border-box );
 			&.selected, &:hover {
 				background-color: $highlight;

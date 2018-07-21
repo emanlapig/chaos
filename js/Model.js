@@ -48,6 +48,9 @@ var M = {
 				}
 			},
 			current: 0,
+			strip_punc: function( str ) {
+				return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+			},
 			go_to_view: function( to ) {
 				var from = $( "#key .view" )
 					, current = M.settings.key_view;
@@ -70,21 +73,54 @@ var M = {
 				}, 500 );
 			},
 			views: {
-				eno_only: {
+				eng_eno: {
 					index: 0,
+					init: function() {
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, frag = document.createDocumentFragment()
+						for ( var i=0; i<key.content.length; i++ ) {
+							var eno = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eno" }
+								],
+								html: key.content[i].eno
+							}), eng = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eng" }
+								],
+								html: key.content[i].eng
+							}), node = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "word" }
+								]
+							});
+							node.appendChild( eno );
+							node.appendChild( eng );
+							frag.appendChild( node );
+						}
+						$( "#key #eng_eno" ).text( "" ).append( frag );
+					}
+				},
+				eno_only: {
+					index: 1,
 					init: function() {
 						var current = M.pages.key.current
 							, key = enochian_keys[ current ]
 							, text = "";
 						for ( var i=0; i<key.content.length; i++ ) {
-							text += key.content[i].eno;
+							var no_punc = M.pages.key.strip_punc( key.content[i].eno );
+							text += no_punc;
 							text += " ";
 						}
 						$( "#key #eno_only p bdo" ).text( text );
 					}
 				},
 				eno_pronounce: {
-					index: 1,
+					index: 2,
 					init: function() {
 						var current = M.pages.key.current
 							, key = enochian_keys[ current ]
@@ -96,12 +132,6 @@ var M = {
 						$( "#key #eno_pronounce p" ).text( text );
 					}
 				},
-				eng_eno: {
-					index: 2,
-					init: function() {
-
-					}
-				},
 				eng_eno_table: {
 					index: 3,
 					init: function() {
@@ -110,9 +140,9 @@ var M = {
 				}
 			},
 			views_registry: [
+				"eng_eno",
 				"eno_only",
 				"eno_pronounce",
-				"eng_eno",
 				"eng_eno_table"
 			]
 		},
@@ -225,143 +255,263 @@ var enochian_keys = [
 		title: "The First Key",
 		content: [
 			{
-				eno: "OL",
+				eno: "Ol",
 				eng: "I"
 			},{
-				eno: "SONF",
+				eno: "sonf",
 				eng: "reign"
 			},{
-				eno: "VORS G",
+				eno: "vors-g",
 				eng: "over you,"
 			},{
-				eno: "GOHO",
+				eno: "goho",
 				eng: "saith"
 			},{
-				eno: "IAD",
+				eno: "Iad",
 				eng: "the God"
 			},{
-				eno: "BALT",
+				eno: "Balt,",
 				eng: "of Justice,"
 			},{
-				eno: "LANSH",
+				eno: "lansh",
 				eng: "in power exalted"
 			},{
-				eno: "CALZ",
+				eno: "calz",
 				eng: "over the firmaments"
 			},{
-				eno: "VONPHO",
+				eno: "vonpho;",
 				eng: "of wrath;"
 			},{
-				eno: "SOBRA",
+				eno: "sobra",
 				eng: "in whose"
 			},{
-				eno: "Z OL",
+				eno: "z-ol",
 				eng: "hands"
 			},{
-				eno: "ROR",
+				eno: "Ror",
 				eng: "the Sun"
 			},{
 				eno: "I",
 				eng: "is"
 			},{
-				eno: "TA",
+				eno: "ta",
 				eng: "as"
 			},{
-				eno: "NAZPSAD",
+				eno: "nazpsad,",
 				eng: "a sword,"
 			},{
-				eno: "GRAA",
-				eng: "(and) the Moon"
+				eno: "Graa",
+				eng: "and the Moon"
 			},{
-				eno: "TA",
+				eno: "ra",
 				eng: "as"
 			},{
-				eno: "MALPRG",
+				eno: "malprg,",
 				eng: "a through-thrusting fire,"
 			},{
-				eno: "DS",
+				eno: "ds",
 				eng: "which"
 			},{
-				eno: "HOLQ",
+				eno: "holq",
 				eng: "measureth"
 			},{
-				eno: "QAA",
+				eno: "qaa",
 				eng: "your garments"
 			},{
-				eno: "NOTHOA",
+				eno: "nothoa",
 				eng: "in the midst"
 			},{
-				eno: "ZIMZ",
+				eno: "zimz",
 				eng: "of my vestitures,"
 			},{
-				eno: "OD",
+				eno: "od",
 				eng: "and"
 			},{
-				eno: "COMMAH",
+				eno: "commah",
 				eng: "trussed you together"
 			},{
-				eno: "TA",
+				eno: "ta",
 				eng: "as"
 			},{
-				eno: "NOBLOH",
+				eno: "nobloh",
 				eng: "the palms"
 			},{
-				eno: "ZIEN",
+				eno: "zien;",
 				eng: "of my hands;"
 			},{
-				eno: "SOBA",
+				eno: "soba",
 				eng: "whose"
 			},{
-				eno: "THIL",
+				eno: "thil",
 				eng: "seats"
 			},{
-				eno: "GNONP",
+				eno: "gnonp",
 				eng: "I have garnished"
 			},{
-				eno: "PRGE",
+				eno: "prge",
 				eng: "with the fire"
 			},{
-				eno: "ALDI",
+				eno: "aldi,",
 				eng: "of gathering,"
 			},{
-				eno: "DS",
+				eno: "ds",
 				eng: "which"
 			},{
-				eno: "URBS",
+				eno: "urbs",
 				eng: "beautified"
 			},{
-				eno: "OBOLEH",
+				eno: "oboleh",
 				eng: "your garments"
 			},{
-				eno: "G RSAM",
+				eno: "g-rsam;",
 				eng: "with admiration;"
 			},{
-				eno: "CASARM",
+				eno: "casarm",
 				eng: "to whom"
 			},{
-				eno: "OHORELA",
+				eno: "ohorela",
 				eng: "I made a Law"
 			},{
-				eno: "CABA",
+				eno: "caba",
 				eng: "to govern"
 			},{
-				eno: "PIR",
+				eno: "pir",
 				eng: "the Holy Ones,"
 			},{
-				eno: "DS",
+				eno: "ds",
 				eng: "which"
 			},{
-				eno: "ZONRENSG",
+				eno: "zonrensg",
 				eng: "delivered you"
 			},{
-				eno: "CAB",
+				eno: "cab",
 				eng: "a rod"
 			},{
-				eno: "ERM",
+				eno: "erm",
 				eng: "with the ark"
 			},{
-				eno: "JADNAH",
+				eno: "Jadnah.",
 				eng: "of knowledge."
+			},{
+				eno: "Pilah,",
+				eng: "Moreover,"
+			},{
+				eno: "farzm",
+				eng: "you filled up your voices"
+			},{
+				eno: "znrza",
+				eng: "and swore"
+			},{
+				eno: "adna",
+				eng: "obedience"
+			},{
+				eno: "gono",
+				eng: "and faith"
+			},{
+				eno: "Iadpil",
+				eng: "to Him"
+			},{
+				eno: "ds",
+				eng: "that"
+			},{
+				eno: "hom",
+				eng: "liveth"
+			},{
+				eno: "toh;",
+				eng: "and triumpheth;"
+			},{
+				eno: "soba",
+				eng: "whose"
+			},{
+				eno: "ipam",
+				eng: "(beginning) is not"
+			},{
+				eno: "lu",
+				eng: "nor end"
+			},{
+				eno: "ipamis;",
+				eng: "cannot be;"
+			},{
+				eno: "ds",
+				eng: "which"
+			},{
+				eno: "loholo",
+				eng: "shineth"
+			},{
+				eno: "vep",
+				eng: "as a flame"
+			},{
+				eno: "zomd",
+				eng: "in the midst"
+			},{
+				eno: "poamal,",
+				eng: "of your palace,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "bogpa",
+				eng: "reigneth"
+			},{
+				eno: "aai",
+				eng: "amongst you"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "piap",
+				eng: "the balance"
+			},{
+				eno: "piamol",
+				eng: "of righteousness"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "vaoan.",
+				eng: "truth."
+			},{
+				eno: "ZACARe",
+				eng: "Move,"
+			},{
+				eno: "ca,",
+				eng: "therefore,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ZAMRAN!",
+				eng: "show yourselves!"
+			},{
+				eno: "Odo",
+				eng: "Open"
+			},{
+				eno: "cicle",
+				eng: "the mysteries"
+			},{
+				eno: "qaa.",
+				eng: "of your creation."
+			},{
+				eno: "Zorge,",
+				eng: "Be friendly unto me:"
+			},{
+				eno: "lap",
+				eng: "for"
+			},{
+				eno: "zirdo",
+				eng: "I am"
+			},{
+				eno: "noco",
+				eng: "the servant"
+			},{
+				eno: "MAD,",
+				eng: "of the same your God,"
+			},{
+				eno: "hoath",
+				eng: "the true worshipper"
+			},{
+				eno: "Jaida.",
+				eng: "of the Highest."
 			},
 		]
 	}

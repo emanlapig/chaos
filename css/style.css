@@ -11,6 +11,17 @@
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
   transition: opacity 0.5s ease-in-out 0s; }
+  .page .view#eng_eno .word {
+    display: inline-block;
+    margin: 8px 10px; }
+    .page .view#eng_eno .word > div {
+      display: block;
+      text-align: center; }
+    .page .view#eng_eno .word .eng {
+      color: #fff; }
+    .page .view#eng_eno .word .eno {
+      font-size: 18px;
+      font-family: 'Muli-Bold'; }
 .page .view-ctrl .btn {
   display: inline-flex;
   justify-content: center;
@@ -20,6 +31,7 @@
   margin: 0px 2px;
   background-color: #74276D;
   color: #590952;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
