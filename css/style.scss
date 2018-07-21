@@ -1,10 +1,21 @@
 // app stylesheet
 
+@import '../webappTmpl/css/mixins';
+
 @font-face {
 	font-family: 'Schueler';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Schueler'), url(../../fonts/Schueler.ttf) format('truetype');
+}
+
+.page {
+	.view {
+		display: block;
+		position: relative;
+		width: 100%;
+		@include transition( opacity, .5s, ease-in-out, 0s );
+	}
 }
 
 .schueler-reg {

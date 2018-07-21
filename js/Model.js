@@ -13,16 +13,82 @@ var M = {
 			selector: "dashboard",
 			init: function() {
 				$( "#dash-item-0" ).on( 'click', function(e) {
+					V.go_to_page( 'enochiana' );
+				});
+			}
+		},
+		enochiana: {
+			title: "Enochiana",
+			selector: "enochiana",
+			init: function() {
+				$( "a#key-1" ).on( 'click', function(e) {
 					V.go_to_page( 'key' );
 				});
 			}
 		},
 		key: {
-			title: "Custom Font",
+			title: "Key",
 			selector: "key",
 			init: function() {
+				M.pages.key.go_to_view( M.pages.key.views_registry[ M.settings.key_view ] );
+				$( ".view-ctrl .btn" ).on( 'click', function(e) {
+					var to = M.pages.key.views_registry[ $( e.target ).attr( 'data-view' ) ];
+					M.pages.key.go_to_view( to );
+				});
+			},
+			go_to_view: function( to ) {
+				var from = $( "#key .view" )
+					, current = M.settings.key_view;
+					$( "#key .view *" ).unbind();
+				for ( var i=0; i<from.length; i++ ) {
+					if ( $( from[i] ).hasClass( "show" ) ) {
+						$( from[i] ).removeClass( "show" ).addClass( "hidden" );
+					}
+				}
+				M.pages.key.views[ to ].init();
+				setTimeout( function() {
+					$( "#key .view.hidden" ).addClass( "gone" );
+					$( [ "#", to ].join( "" ) ).removeClass( "gone" );
+					document.getElementById( "key" ).scrollTo( 0, 0 );
+					M.settings.key_view = M.pages.key.views[ to ].index;
+					M.save_settings();
+					setTimeout( function() { 
+						$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
+					}, 10 );
+				}, 500 );
+			},
+			views: {
+				eno_only: {
+					index: 0,
+					init: function() {
 
-			}
+					}
+				},
+				eno_pronounce: {
+					index: 1,
+					init: function() {
+
+					}
+				},
+				eng_eno: {
+					index: 2,
+					init: function() {
+
+					}
+				},
+				eng_eno_table: {
+					index: 3,
+					init: function() {
+
+					}
+				}
+			},
+			views_registry: [
+				"eno_only",
+				"eno_pronounce",
+				"eng_eno",
+				"eng_eno_table"
+			]
 		},
 		settings: {
 			title: "Settings",
@@ -100,7 +166,8 @@ var M = {
 	},
 	settings: {
 		hdr_eno: false,
-		schueler: false
+		schueler: false,
+		key_view: 0
 	},
 	save_settings: function() {
 		window.localStorage.setItem( "settings", JSON.stringify( M.settings ) );
@@ -122,7 +189,7 @@ var M = {
 // pages registry
 var nav_pages = [
 	M.pages.dashboard,
-	M.pages.key,
+	M.pages.enochiana,
 	M.pages.settings
 ];
 
