@@ -25,6 +25,10 @@ var M = {
 					M.pages.key.current = $( e.target ).attr( "data-key" );
 					V.go_to_page( 'key' );
 				});
+				$( "a#key-2" ).on( 'click', function(e) {
+					M.pages.key.current = $( e.target ).attr( "data-key" );
+					V.go_to_page( 'key' );
+				});
 			}
 		},
 		key: {
@@ -46,6 +50,7 @@ var M = {
 						$( btn[i] ).removeClass( "selected" );
 					}
 				}
+				$( "#key h3.page-title" ).text( enochian_keys[ M.pages.key.current ].title );
 			},
 			current: 0,
 			strip_punc: function( str ) {
@@ -517,6 +522,164 @@ var enochian_keys = [
 			},{
 				eno: "Jaida.",
 				eng: "of the Highest."
+			},
+		]
+	},{
+		title: "The Second Key",
+		content:[
+			{
+				eno: "Adgt",
+				eng: "Can"
+			},{
+				eno: "Vpaah",
+				eng: "the Wings"
+			},{
+				eno: "Zongom",
+				eng: "of the Winds"
+			},{
+				eno: "faaip",
+				eng: "understand"
+			},{
+				eno: "sald,",
+				eng: "your voices of wonder,"
+			},{
+				eno: "viiv",
+				eng: "O you, the Second"
+			},{
+				eno: "L?",
+				eng: "of the First?"
+			},{
+				eno: "Sobam",
+				eng: "Whom"
+			},{
+				eno: "Ialprg",
+				eng: "the burning flames"
+			},{
+				eno: "izazaz",
+				eng: "have framed"
+			},{
+				eno: "piadph;",
+				eng: "within the depths of my jaws;"
+			},{
+				eno: "casarma",
+				eng: "whom"
+			},{
+				eno: "abramg",
+				eng: "I have prepared"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "talho",
+				eng: "cups"
+			},{
+				eno: "paracleda",
+				eng: "for a wedding,"
+			},{
+				eno: "q-ta",
+				eng: "or as"
+			},{
+				eno: "lorslq",
+				eng: "the flowers"
+			},{
+				eno: "turbs",
+				eng: "in their beauty"
+			},{
+				eno: "ooge",
+				eng: "for the chamber"
+			},{
+				eno: "Baltoh.",
+				eng: "of righteousness."
+			},{
+				eno: "Giui",
+				eng: "Stronger"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "lusd",
+				eng: "your feet"
+			},{
+				eno: "orri,",
+				eng: "than the barren stone,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "micalp",
+				eng: "mightier"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "bia",
+				eng: "your voices"
+			},{
+				eno: "ozongon.",
+				eng: "than the manifold winds."
+			},{
+				eno: "Lap",
+				eng: "For"
+			},{
+				eno: "noan",
+				eng: "you are become"
+			},{
+				eno: "trof",
+				eng: "a building"
+			},{
+				eno: "cors",
+				eng: "such"
+			},{
+				eno: "tage,",
+				eng: "as is not,"
+			},{
+				eno: "oq",
+				eng: "but"
+			},{
+				eno: "manin",
+				eng: "in the mind"
+			},{
+				eno: "Iaidon.",
+				eng: "of the All-powerful."
+			},{
+				eno: "Torzu,",
+				eng: "Arise,"
+			},{
+				eno: "gohe-l!",
+				eng: "saith the First!"
+			},{
+				eno: "ZACAR,",
+				eng: "Move,"
+			},{
+				eno: "ca,",
+				eng: "therefore,"
+			},{
+				eno: "c-noqod.",
+				eng: "unto his servants!"
+			},{
+				eno: "ZAMRAN",
+				eng: "Show yourselves"
+			},{
+				eno: "micalzo,",
+				eng: "in power,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ozazm",
+				eng: "make me"
+			},{
+				eno: "urelp,",
+				eng: "a strong see-thing,"
+			},{
+				eno: "lap",
+				eng: "for"
+			},{
+				eno: "zir",
+				eng: "I am"
+			},{
+				eno: "Ioiad",
+				eng: "of Him that liveth forever"
 			},
 		]
 	}
