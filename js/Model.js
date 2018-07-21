@@ -160,7 +160,8 @@ var M = {
 					M.settings.schueler = ( M.settings.schueler )? false : true;
 					M.save_settings();
 					M.pages.settings.toggle_eno_font();
-				})
+				});
+				$( "#clear-settings" ).on( 'click', M.clear_settings );
 				// check saved settings
 				if ( M.settings.hdr_eno ) {
 					$( "#hdr-font" ).attr( "checked", "checked" );
@@ -240,6 +241,10 @@ var M = {
 			M.pages.settings.toggle_hdr_font();
 		}
 	},
+	clear_settings: function() {
+		window.localStorage.removeItem( "settings" );
+		document.location.reload();
+	}
 };
 
 // pages registry
@@ -303,7 +308,7 @@ var enochian_keys = [
 				eno: "Graa",
 				eng: "and the Moon"
 			},{
-				eno: "ra",
+				eno: "ta",
 				eng: "as"
 			},{
 				eno: "malprg,",

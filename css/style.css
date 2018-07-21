@@ -7,6 +7,7 @@
   display: block;
   position: relative;
   width: 100%;
+  opacity: 1;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
@@ -22,6 +23,12 @@
     .page .view#eng_eno .word .eno {
       font-size: 18px;
       font-family: 'Muli-Bold'; }
+  .page .view.hidden {
+    opacity: 0 !important; }
+  .page .view.gone {
+    display: none !important; }
+  .page .view.show {
+    opacity: 1 !important; }
 .page .view-ctrl .btn {
   display: inline-flex;
   justify-content: center;

@@ -20,6 +20,7 @@ $highlight: #D2CA78;
 		display: block;
 		position: relative;
 		width: 100%;
+		opacity: 1;
 		@include transition( opacity, .5s, ease-in-out, 0s );
 		&#eng_eno {
 			.word {
@@ -37,6 +38,15 @@ $highlight: #D2CA78;
 					font-family: 'Muli-Bold';
 				}
 			}
+		}
+		&.hidden {
+			opacity: 0!important;
+		}
+		&.gone {
+			display: none!important;
+		}
+		&.show {
+			opacity: 1!important;
 		}
 	}
 	.view-ctrl {
