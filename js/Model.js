@@ -50,7 +50,13 @@ var M = {
 						$( btn[i] ).removeClass( "selected" );
 					}
 				}
-				$( "#key h3.page-title" ).text( enochian_keys[ M.pages.key.current ].title );
+				var title;
+				if ( !M.settings.hdr_eno ) {
+					title = enochian_keys[ M.pages.key.current ].title
+				} else {
+					title = enochian_keys[ M.pages.key.current ].title.split( "" ).reverse().join( "" );
+				}
+				$( "#key h3.page-title" ).text( title );
 			},
 			current: 0,
 			strip_punc: function( str ) {
