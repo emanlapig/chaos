@@ -60,7 +60,7 @@ var M = {
 			},
 			current: 0,
 			strip_punc: function( str ) {
-				return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+				return str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g,"");
 			},
 			go_to_view: function( to ) {
 				var from = $( "#key .view" )
