@@ -602,7 +602,7 @@ var enochian_keys = [
 				eno: "Noan",
 				eng: "Thus you are become"
 			},{
-				eno: "unalah",
+				eno: "vnalah",
 				eng: "the skirts"
 			},{
 				eno: "Balt",
