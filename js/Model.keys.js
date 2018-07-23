@@ -662,13 +662,13 @@ var enochian_keys = [
 				eno: "ZACAR,",
 				eng: "move,"
 			},{
-				eno: "uniglag",
+				eno: "vniglag",
 				eng: "descend"
 			},{
 				eno: "od",
 				eng: "and"
 			},{
-				eno: "imvamar,",
+				eno: "imuamar,",
 				eng: "apply yourselves unto us,"
 			},{
 				eno: "pugo",
