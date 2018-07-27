@@ -68,6 +68,7 @@ var M = {
 					}
 				}
 				M.pages.key.views[ to ].init();
+				M.pages.settings.toggle_eno_font();
 				setTimeout( function() {
 					$( "#key .view.hidden" ).addClass( "gone" );
 					$( [ "#", to ].join( "" ) ).removeClass( "gone" );
@@ -142,7 +143,63 @@ var M = {
 				eng_eno_table: {
 					index: 3,
 					init: function() {
-
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, frag = document.createDocumentFragment()
+						for ( var i=0; i<key.content.length; i++ ) {
+							var eno = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eno" }
+								]
+							}), num = V.el_factory({
+								tag: "span",
+								attrs: [
+									{ attr: "class", val: "num" }
+								],
+								html: [ ( Number( current ) + 1 ), ( i + 1 ) ].join( "." )
+							}), eno1 = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eno1 enoch-reg" }
+								],
+								html: M.pages.key.strip_punc( key.content[i].eno ).split( "" ).reverse().join( "" )
+							}), eno2 = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eno2" }
+								],
+								html: key.content[i].eno
+							}), space = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "space enoch-reg" }
+								],
+								html: "B"
+							}), eng = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eng" }
+								]
+							}), eng_word = V.el_factory({
+								tag: "div",
+								html: key.content[i].eng
+							}), node = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "word" }
+								]
+							});
+							eno.appendChild( num );
+							eno.appendChild( eno1 );
+							eno.appendChild( eno2 );
+							eng.appendChild( space );
+							eng.appendChild( eng_word );
+							node.appendChild( eno );
+							node.appendChild( eng );
+							frag.appendChild( node );
+						}
+						$( "#key #eng_eno_table" ).text( "" ).append( frag );
 					}
 				}
 			},
