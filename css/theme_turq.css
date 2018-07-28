@@ -1,0 +1,32 @@
+body {
+  background-color: #3F627F; }
+
+.page a {
+  color: #D2CA78; }
+.page.dark {
+  background-color: #3F627F;
+  color: #D2CA78; }
+
+#nav-menu {
+  background-color: #0B2E4B; }
+  #nav-menu a {
+    color: #D2CA78; }
+    #nav-menu a:hover {
+      background-color: #D2CA78;
+      color: #0B2E4B; }
+
+#header {
+  background-color: #2A4F6E;
+  color: #D2CA78; }
+
+.dash-item .dash-icon {
+  background-color: #2A4F6E; }
+
+.page .view-ctrl .btn {
+  background-color: #587790;
+  color: #2A4F6E; }
+  .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
+    background-color: #D2CA78;
+    color: #0B2E4B; }
+
+/*# sourceMappingURL=theme_turq.css.map */

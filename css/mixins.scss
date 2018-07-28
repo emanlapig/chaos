@@ -1,21 +1,19 @@
 // MIXINS
+@import '../webappTmpl/css/mixins';
 
-// general
-@mixin transition( $prop:all, $dur:1s, $timing:linear, $delay:0s ) {
-	-webkit-transition: $prop $dur $timing $delay;
-	-moz-transition: $prop $dur $timing $delay;
-	-o-transition: $prop $dur $timing $delay;
-	transition: $prop $dur $timing $delay;
+@mixin template-theme-local( $base-xlight:#587790, $base-light:#3F627F, $base-med:#2A4F6E, $base-dark:#0B2E4B, $highlight:#D2CA78 ) {
+	@include template-theme( $base-xlight, $base-light, $base-med, $base-dark, $highlight );
+
+	.page {
+		.view-ctrl {
+			.btn {
+				background-color: $base-xlight;
+				color: $base-med;
+				&.selected, &:hover {
+					background-color: $highlight;
+					color: $base-dark;
+				}
+			}
+		}
+	}
 }
-
-@mixin box-sizing( $val ) {
-	-webkit-box-sizing: $val;
-	-moz-box-sizing: $val;
-	box-sizing: $val;
-}
-
-// media queries
-$desktop-only: "only screen and ( min-width:1025px )";
-$desktop-tablet-landscape: "only screen and ( min-width:1024px )";
-$tablet: "only screen and ( min-width:768px ) and ( max-width:1024px )";
-$mobile: "only screen and ( max-width:767px )";

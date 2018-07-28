@@ -225,6 +225,12 @@ var M = {
 					M.save_settings();
 					M.pages.settings.toggle_eno_font();
 				});
+				$( "div.swatch-group" ).on( 'click', function(e) {
+					var theme = $( e.target ).attr( 'data-theme' ) || $( e.target ).parent().attr( 'data-theme' ) ;
+					M.pages.settings.change_theme( theme );
+					M.settings.theme = theme;
+					M.save_settings();
+				});
 				$( "#clear-settings" ).on( 'click', M.clear_settings );
 				// check saved settings
 				if ( M.settings.hdr_eno ) {
@@ -282,13 +288,18 @@ var M = {
 					$( ".schueler-mono" ).removeClass( "schueler-mono" ).addClass( "enoch-mono" );
 					$( ".schueler-reg" ).removeClass( "schueler-reg" ).addClass( "enoch-reg" );
 				}
+			},
+			change_theme: function( theme ) {
+				var path = [ "css/min/theme_", theme, ".min.css" ].join( "" );
+				$( "#theme-stylesheet" ).attr( 'href', path );
 			}
 		}
 	},
 	settings: {
 		hdr_eno: false,
 		schueler: false,
-		key_view: 0
+		key_view: 0,
+		theme: "turq"
 	},
 	save_settings: function() {
 		window.localStorage.setItem( "settings", JSON.stringify( M.settings ) );
@@ -304,6 +315,7 @@ var M = {
 		if ( M.settings.hdr_eno ) {
 			M.pages.settings.toggle_hdr_font();
 		}
+		M.pages.settings.change_theme( M.settings.theme );
 	},
 	clear_settings: function() {
 		window.localStorage.removeItem( "settings" );

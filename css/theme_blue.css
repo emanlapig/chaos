@@ -1,0 +1,32 @@
+body {
+  background-color: #614385; }
+
+.page a {
+  color: #D2CA78; }
+.page.dark {
+  background-color: #614385;
+  color: #D2CA78; }
+
+#nav-menu {
+  background-color: #2B0C4F; }
+  #nav-menu a {
+    color: #D2CA78; }
+    #nav-menu a:hover {
+      background-color: #D2CA78;
+      color: #2B0C4F; }
+
+#header {
+  background-color: #4D2D73;
+  color: #D2CA78; }
+
+.dash-item .dash-icon {
+  background-color: #4D2D73; }
+
+.page .view-ctrl .btn {
+  background-color: #785D97;
+  color: #4D2D73; }
+  .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
+    background-color: #D2CA78;
+    color: #2B0C4F; }
+
+/*# sourceMappingURL=theme_blue.css.map */
