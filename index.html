@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="css/min/theme_turq.min.css" id="theme-stylesheet">
 	<script type="text/javascript" src="webappTmpl/lib/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="js/min/Model.min.js"></script>
+	<script type="text/javascript">
+		// apply saved settings
+		M.load_settings();
+		M.pages.settings.change_theme( M.settings.theme );
+	</script>
 	<script type="text/javascript" src="js/min/Model.keys.min.js"></script>
 	<script type="text/javascript" src="webappTmpl/js/min/View.min.js"></script>
 	<script type="text/javascript" src="js/min/Controller.min.js"></script>
