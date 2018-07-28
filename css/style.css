@@ -58,22 +58,24 @@
         font-size: 18px; }
         .page .view#eng_eno_table .word .eng .space.schueler-reg {
           font-size: 24px; }
-.page .view-ctrl .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  margin: 0px 2px;
-  background-color: #74276D;
-  color: #590952;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
-    background-color: #D2CA78;
-    color: #590952; }
+.page .view-ctrl {
+  margin: 1em 0px 2em; }
+  .page .view-ctrl .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 0px 2px;
+    background-color: #587790;
+    color: #2A4F6E;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
+      background-color: #D2CA78;
+      color: #0B2E4B; }
 
 .schueler-reg {
   font-family: 'Schueler';
