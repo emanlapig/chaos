@@ -5,7 +5,6 @@ var C = {
 		V.build_nav();
 
 		// apply saved settings
-		M.load_settings();
 		M.apply_settings();
 
 		if ( M.settings.schueler ) {

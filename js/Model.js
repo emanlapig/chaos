@@ -315,7 +315,6 @@ var M = {
 		if ( M.settings.hdr_eno ) {
 			M.pages.settings.toggle_hdr_font();
 		}
-		M.pages.settings.change_theme( M.settings.theme );
 	},
 	clear_settings: function() {
 		window.localStorage.removeItem( "settings" );
