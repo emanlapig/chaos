@@ -172,7 +172,7 @@ var M = {
 							node.appendChild( eng );
 							frag.appendChild( node );
 						}
-						$( "#key #eng_eno_table" ).text( "" ).append( frag );
+						$( "#key #eng_eno_table .key-content" ).text( "" ).append( frag );
 					}
 				},
 				eng_eno: {
@@ -204,7 +204,7 @@ var M = {
 							node.appendChild( eng );
 							frag.appendChild( node );
 						}
-						$( "#key #eng_eno" ).text( "" ).append( frag );
+						$( "#key #eng_eno .key-content" ).text( "" ).append( frag );
 					}
 				},
 				eno_only: {
