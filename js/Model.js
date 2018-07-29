@@ -48,34 +48,59 @@ var M = {
 				}
 				var title = enochian_keys[ M.pages.key.current ].title
 				$( "#key h3.page-title" ).text( title );
+				$( "#prev-key" ).on( 'click', function(e) {
+					M.pages.key.current = Number( M.pages.key.current ) - 1;
+					V.current_page = false;
+					V.go_to_page( 'key' );
+				});
+				$( "#next-key" ).on( 'click', function(e) {
+					M.pages.key.current = Number( M.pages.key.current ) + 1;
+					V.current_page = false;
+					V.go_to_page( 'key' );
+				});
+				if ( M.pages.key.current == 0 ) {
+					$( "#prev-key" ).addClass( "hidden" );
+				} else {
+					$( "#prev-key" ).removeClass( "hidden" );
+				}
+				if ( M.pages.key.current == enochian_keys.length - 1 ) {
+					$( "#next-key" ).addClass( "hidden" );
+				} else {
+					$( "#next-key" ).removeClass( "hidden" );
+				}
+
 			},
-			current: 0,
+			current: false,
 			strip_punc: function( str ) {
 				return str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g,"");
 			},
 			go_to_view: function( to ) {
-				var from = $( "#key .view" )
-					, current = M.settings.key_view;
-					$( "#key .view *" ).unbind();
-				for ( var i=0; i<from.length; i++ ) {
-					if ( $( from[i] ).hasClass( "show" ) ) {
-						$( from[i] ).removeClass( "show" ).addClass( "hidden" );
-					}
-				}
+				console.log( M.pages.key.views.current, M.pages.key.views[ to ].index );
 				M.pages.key.views[ to ].init();
-				M.pages.settings.toggle_eno_font();
-				setTimeout( function() {
-					$( "#key .view.hidden" ).addClass( "gone" );
-					$( [ "#", to ].join( "" ) ).removeClass( "gone" );
-					document.getElementById( "key" ).scrollTo( 0, 0 );
-					M.settings.key_view = M.pages.key.views[ to ].index;
-					M.save_settings();
-					setTimeout( function() { 
-						$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
-					}, 10 );
-				}, 500 );
+				if ( M.pages.key.views.current != M.pages.key.views[ to ].index ) {
+					$( "#key .view *" ).unbind();
+					var from = $( "#key .view" );
+					for ( var i=0; i<from.length; i++ ) {
+						if ( $( from[i] ).hasClass( "show" ) ) {
+							$( from[i] ).removeClass( "show" ).addClass( "hidden" );
+						}
+					}
+					M.pages.settings.toggle_eno_font();
+					setTimeout( function() {
+						$( "#key .view.hidden" ).addClass( "gone" );
+						$( [ "#", to ].join( "" ) ).removeClass( "gone" );
+						document.getElementById( "key" ).scrollTo( 0, 0 );
+						M.settings.key_view = M.pages.key.views[ to ].index;
+						M.save_settings();
+						setTimeout( function() { 
+							$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
+						}, 10 );
+					}, 500 );
+					M.pages.key.views.current = M.pages.key.views[ to ].index;
+				}
 			},
 			views: {
+				current: 0,
 				eng_eno_table: {
 					index: 0,
 					init: function() {

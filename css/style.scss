@@ -104,6 +104,35 @@
 			}
 		}
 	}
+	.btm-nav {
+		display: block;
+		margin-top: 40px;
+		a {
+			display: inline-block;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			font-size: 14px;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+			&#next-key {
+				float: right;
+			}
+			i {
+				margin-top: -2px;
+			}
+			.icon-chevron-left {
+				margin-right: 4px;
+			}
+			.icon-chevron-right {
+				margin-left: 4px;
+			}
+			&.hidden {
+				display: none;
+			}
+		}
+	}
 }
 
 h3.tall-num {

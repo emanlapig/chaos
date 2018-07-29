@@ -78,6 +78,27 @@
     .page .view-ctrl .btn.selected, .page .view-ctrl .btn:hover {
       background-color: #D2CA78;
       color: #0B2E4B; }
+.page .btm-nav {
+  display: block;
+  margin-top: 40px; }
+  .page .btm-nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-decoration: none; }
+    .page .btm-nav a:hover {
+      text-decoration: none; }
+    .page .btm-nav a#next-key {
+      float: right; }
+    .page .btm-nav a i {
+      margin-top: -2px; }
+    .page .btm-nav a .icon-chevron-left {
+      margin-right: 4px; }
+    .page .btm-nav a .icon-chevron-right {
+      margin-left: 4px; }
+    .page .btm-nav a.hidden {
+      display: none; }
 
 h3.tall-num {
   margin-top: -6px; }
