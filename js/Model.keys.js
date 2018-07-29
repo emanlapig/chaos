@@ -417,8 +417,8 @@ var enochian_keys = [
 				eno: "zir",
 				eng: "I am"
 			},{
-				eno: "Ioiad",
-				eng: "of Him that liveth forever"
+				eno: "Ioiad.",
+				eng: "of Him that liveth forever."
 			},
 		]
 	},{

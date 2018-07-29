@@ -48,34 +48,33 @@ var M = {
 				}
 				var title = enochian_keys[ M.pages.key.current ].title
 				$( "#key h3.page-title" ).text( title );
-				$( "#prev-key" ).on( 'click', function(e) {
+				// bind nav btns
+				$( ".prev-key" ).on( 'click', function(e) {
 					M.pages.key.current = Number( M.pages.key.current ) - 1;
 					V.current_page = false;
 					V.go_to_page( 'key' );
 				});
-				$( "#next-key" ).on( 'click', function(e) {
+				$( ".next-key" ).on( 'click', function(e) {
 					M.pages.key.current = Number( M.pages.key.current ) + 1;
 					V.current_page = false;
 					V.go_to_page( 'key' );
 				});
 				if ( M.pages.key.current == 0 ) {
-					$( "#prev-key" ).addClass( "hidden" );
+					$( ".prev-key" ).addClass( "hidden" );
 				} else {
-					$( "#prev-key" ).removeClass( "hidden" );
+					$( ".prev-key" ).removeClass( "hidden" );
 				}
 				if ( M.pages.key.current == enochian_keys.length - 1 ) {
-					$( "#next-key" ).addClass( "hidden" );
+					$( ".next-key" ).addClass( "hidden" );
 				} else {
-					$( "#next-key" ).removeClass( "hidden" );
+					$( ".next-key" ).removeClass( "hidden" );
 				}
-
 			},
 			current: false,
 			strip_punc: function( str ) {
 				return str.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g,"");
 			},
 			go_to_view: function( to ) {
-				console.log( M.pages.key.views.current, M.pages.key.views[ to ].index );
 				M.pages.key.views[ to ].init();
 				if ( M.pages.key.views.current != M.pages.key.views[ to ].index ) {
 					$( "#key .view *" ).unbind();

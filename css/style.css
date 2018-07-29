@@ -89,7 +89,7 @@
     text-decoration: none; }
     .page .btm-nav a:hover {
       text-decoration: none; }
-    .page .btm-nav a#next-key {
+    .page .btm-nav a.next-key {
       float: right; }
     .page .btm-nav a i {
       margin-top: 2px; }
