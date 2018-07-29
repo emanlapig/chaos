@@ -725,7 +725,7 @@ var enochian_keys = [
 				eng: "in the second angle?"
 			},{
 				eno: "Casarmi",
-				eng: "under whom"
+				eng: "Under whom"
 			},{
 				eno: "oali",
 				eng: "I have placed"
@@ -742,7 +742,7 @@ var enochian_keys = [
 				eno: "cormpo,",
 				eng: "have yet numbered,"
 			},{
-				eno: "crp-l;",
+				eno: "crpl;",
 				eng: "but one;"
 			},{
 				eno: "casarmg",
