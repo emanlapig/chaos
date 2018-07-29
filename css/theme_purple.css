@@ -7,6 +7,13 @@ body {
   background-color: #863D80;
   color: #D2CA78; }
 
+.icon-grid .grid-icon {
+  background-color: #74276D; }
+
+.grid-icon:hover, .dash-item:hover .dash-icon {
+  background-color: #D2CA78 !important;
+  color: #74276D; }
+
 #nav-menu {
   background-color: #590952; }
   #nav-menu a {

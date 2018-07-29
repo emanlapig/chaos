@@ -77,6 +77,9 @@
       background-color: #D2CA78;
       color: #0B2E4B; }
 
+h3.tall-num:after {
+  content: " ."; }
+
 .schueler-reg {
   font-family: 'Schueler';
   text-align: right; }

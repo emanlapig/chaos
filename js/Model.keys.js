@@ -1,7 +1,7 @@
 // enochian keys
 var enochian_keys = [
 	{
-		title: "The First Key",
+		title: "I",
 		content: [
 			{
 				eno: "Ol",
@@ -264,7 +264,7 @@ var enochian_keys = [
 			},
 		]
 	},{
-		title: "The Second Key",
+		title: "II",
 		content:[
 			{
 				eno: "Adgt",
@@ -422,7 +422,7 @@ var enochian_keys = [
 			},
 		]
 	},{
-		title: "The Third Key",
+		title: "III",
 		content:[
 			{
 				eno: "Micma,",

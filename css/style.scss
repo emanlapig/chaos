@@ -103,6 +103,10 @@
 	}
 }
 
+h3.tall-num:after {
+	content: " .";
+}
+
 .schueler-reg {
 	font-family: 'Schueler';
 	text-align: right;

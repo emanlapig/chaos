@@ -21,8 +21,8 @@ var M = {
 			title: "Enochiana",
 			selector: "enochiana",
 			init: function() {
-				$( "a.key-link" ).on( 'click', function(e) {
-					M.pages.key.current = $( e.target ).attr( "data-key" );
+				$( ".grid-icon" ).on( 'click', function(e) {
+					M.pages.key.current = $( e.target ).attr( "data-key" ) || $( e.target ).parent().attr( "data-key" );
 					V.go_to_page( 'key' );
 				});
 			}
@@ -46,12 +46,7 @@ var M = {
 						$( btn[i] ).removeClass( "selected" );
 					}
 				}
-				var title;
-				if ( !M.settings.hdr_eno ) {
-					title = enochian_keys[ M.pages.key.current ].title
-				} else {
-					title = enochian_keys[ M.pages.key.current ].title.split( "" ).reverse().join( "" );
-				}
+				var title = enochian_keys[ M.pages.key.current ].title
 				$( "#key h3.page-title" ).text( title );
 			},
 			current: 0,
