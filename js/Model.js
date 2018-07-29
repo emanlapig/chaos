@@ -238,7 +238,7 @@ var M = {
 			toggle_hdr_font: function(e) {
 				var hdr_mono = $( "h2, h3" );
 				for ( var i=0; i<hdr_mono.length; i++ ) {
-					if ( $( hdr_mono[i] ).hasClass( "always" ) ) {
+					if ( $( hdr_mono[i] ).hasClass( "always" ) || $( hdr_mono[i] ).hasClass( "tall-num" ) ) {
 						continue;
 					}
 					var text = $( hdr_mono[i] ).text();
