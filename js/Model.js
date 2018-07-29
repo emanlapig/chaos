@@ -97,6 +97,15 @@ var M = {
 						}, 10 );
 					}, 500 );
 					M.pages.key.views.current = M.pages.key.views[ to ].index;
+				} else {
+					setTimeout( function() {
+						$( "#key .view.hidden" ).addClass( "gone" );
+						$( [ "#", to ].join( "" ) ).removeClass( "gone" );
+						document.getElementById( "key" ).scrollTo( 0, 0 );
+						setTimeout( function() { 
+							$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
+						}, 10 );
+					}, 500 );
 				}
 			},
 			views: {
