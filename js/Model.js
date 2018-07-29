@@ -76,67 +76,8 @@ var M = {
 				}, 500 );
 			},
 			views: {
-				eng_eno: {
-					index: 0,
-					init: function() {
-						var current = M.pages.key.current
-							, key = enochian_keys[ current ]
-							, frag = document.createDocumentFragment()
-						for ( var i=0; i<key.content.length; i++ ) {
-							var eno = V.el_factory({
-								tag: "div",
-								attrs: [
-									{ attr: "class", val: "eno" }
-								],
-								html: key.content[i].eno
-							}), eng = V.el_factory({
-								tag: "div",
-								attrs: [
-									{ attr: "class", val: "eng" }
-								],
-								html: key.content[i].eng
-							}), node = V.el_factory({
-								tag: "div",
-								attrs: [
-									{ attr: "class", val: "word" }
-								]
-							});
-							node.appendChild( eno );
-							node.appendChild( eng );
-							frag.appendChild( node );
-						}
-						$( "#key #eng_eno" ).text( "" ).append( frag );
-					}
-				},
-				eno_only: {
-					index: 1,
-					init: function() {
-						var current = M.pages.key.current
-							, key = enochian_keys[ current ]
-							, text = "";
-						for ( var i=0; i<key.content.length; i++ ) {
-							var no_punc = M.pages.key.strip_punc( key.content[i].eno );
-							text += no_punc;
-							text += " ";
-						}
-						$( "#key #eno_only p bdo" ).text( text );
-					}
-				},
-				eno_pronounce: {
-					index: 2,
-					init: function() {
-						var current = M.pages.key.current
-							, key = enochian_keys[ current ]
-							, text = "";
-						for ( var i=0; i<key.content.length; i++ ) {
-							text += key.content[i].eno;
-							text += " ";
-						}
-						$( "#key #eno_pronounce p" ).text( text );
-					}
-				},
 				eng_eno_table: {
-					index: 3,
+					index: 0,
 					init: function() {
 						var current = M.pages.key.current
 							, key = enochian_keys[ current ]
@@ -196,13 +137,86 @@ var M = {
 						}
 						$( "#key #eng_eno_table" ).text( "" ).append( frag );
 					}
-				}
+				},
+				eng_eno: {
+					index: 1,
+					init: function() {
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, frag = document.createDocumentFragment()
+						for ( var i=0; i<key.content.length; i++ ) {
+							var eno = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eno" }
+								],
+								html: key.content[i].eno
+							}), eng = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "eng" }
+								],
+								html: key.content[i].eng
+							}), node = V.el_factory({
+								tag: "div",
+								attrs: [
+									{ attr: "class", val: "word" }
+								]
+							});
+							node.appendChild( eno );
+							node.appendChild( eng );
+							frag.appendChild( node );
+						}
+						$( "#key #eng_eno" ).text( "" ).append( frag );
+					}
+				},
+				eno_only: {
+					index: 2,
+					init: function() {
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, text = "";
+						for ( var i=0; i<key.content.length; i++ ) {
+							var no_punc = M.pages.key.strip_punc( key.content[i].eno );
+							text += no_punc;
+							text += " ";
+						}
+						$( "#key #eno_only p bdo" ).text( text );
+					}
+				},
+				eno_pronounce: {
+					index: 3,
+					init: function() {
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, text = "";
+						for ( var i=0; i<key.content.length; i++ ) {
+							text += key.content[i].eno;
+							text += " ";
+						}
+						$( "#key #eno_pronounce p" ).text( text );
+					}
+				},
+				eng_only: {
+					index: 4,
+					init: function() {
+						var current = M.pages.key.current
+							, key = enochian_keys[ current ]
+							, text = "";
+						for ( var i=0; i<key.content.length; i++ ) {
+							text += key.content[i].eng;
+							text += " ";
+						}
+						$( "#key #eng_only p" ).text( text );
+					}
+				},
 			},
 			views_registry: [
+				"eng_eno_table",
 				"eng_eno",
 				"eno_only",
 				"eno_pronounce",
-				"eng_eno_table"
+				"eng_only"
 			]
 		},
 		settings: {

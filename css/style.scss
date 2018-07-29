@@ -84,6 +84,9 @@
 	}
 	.view-ctrl {
 		margin: 1em 0px 2em;
+		.hdr {
+			margin-right: 2px;
+		}
 		.btn {
 			display: inline-flex;
 			justify-content: center;
@@ -103,8 +106,11 @@
 	}
 }
 
-h3.tall-num:after {
-	content: " .";
+h3.tall-num {
+	margin-top: -2px;
+	&:after {
+		content: " .";
+	}
 }
 
 .schueler-reg {
