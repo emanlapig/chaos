@@ -112,7 +112,7 @@ var enochian_keys = [
 				eno: "oboleh",
 				eng: "your garments"
 			},{
-				eno: "g-rsam;",
+				eno: "grsam;",
 				eng: "with admiration;"
 			},{
 				eno: "casarm",
