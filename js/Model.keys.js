@@ -811,7 +811,7 @@ var enochian_keys = [
 				eno: "bagle",
 				eng: "for"
 			},{
-				eno: "Zir-ena-iad,",
+				eno: "Zirenaiad,",
 				eng: "I am the Lord your God,"
 			},{
 				eno: "dsi",
