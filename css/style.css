@@ -82,7 +82,7 @@
   display: block;
   margin-top: 40px; }
   .page .btm-nav a {
-    display: inline-block;
+    display: inline-flex;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 14px;
@@ -92,7 +92,7 @@
     .page .btm-nav a#next-key {
       float: right; }
     .page .btm-nav a i {
-      margin-top: -2px; }
+      margin-top: 2px; }
     .page .btm-nav a .icon-chevron-left {
       margin-right: 4px; }
     .page .btm-nav a .icon-chevron-right {

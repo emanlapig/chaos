@@ -3,7 +3,7 @@ var M = {
 	pages: {
 		init: function( page ) {
 			var page = this[ page ];
-			if ( M.settings.hdr_eno ) {
+			if ( M.settings.hdr_eno && V.current_page ) {
 				$( "#header h2" ).text( page.title.split( "" ).reverse().join( "" ) );
 			}
 			page.init();
