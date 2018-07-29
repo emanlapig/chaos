@@ -10,7 +10,7 @@ var enochian_keys = [
 				eno: "sonf",
 				eng: "reign"
 			},{
-				eno: "vors-g,",
+				eno: "vorsg,",
 				eng: "over you,"
 			},{
 				eno: "goho",
@@ -106,7 +106,7 @@ var enochian_keys = [
 				eno: "ds",
 				eng: "which"
 			},{
-				eno: "urbs",
+				eno: "vrbs",
 				eng: "beautified"
 			},{
 				eno: "oboleh",
@@ -315,7 +315,7 @@ var enochian_keys = [
 				eno: "paracleda",
 				eng: "for a wedding,"
 			},{
-				eno: "q-ta",
+				eno: "qta",
 				eng: "or as"
 			},{
 				eno: "lorslq",
@@ -378,13 +378,13 @@ var enochian_keys = [
 				eno: "manin",
 				eng: "in the mind"
 			},{
-				eno: "Iaidon.",
+				eno: "Jaidon.",
 				eng: "of the All-powerful."
 			},{
 				eno: "Torzu,",
 				eng: "Arise,"
 			},{
-				eno: "gohe-l!",
+				eno: "goheL!",
 				eng: "saith the First!"
 			},{
 				eno: "ZACAR,",
@@ -440,7 +440,7 @@ var enochian_keys = [
 				eno: "comselh",
 				eng: "a circle"
 			},{
-				eno: "a-zien",
+				eno: "azien",
 				eng: "on whose hands"
 			},{
 				eno: "biab",
@@ -709,7 +709,7 @@ var enochian_keys = [
 				eno: "g-chis-ge",
 				eng: "are not"
 			},{
-				eno: "auauago",
+				eno: "Auauago",
 				eng: "the Thunders of Increase"
 			},{
 				eno: "cormp",
@@ -718,10 +718,10 @@ var enochian_keys = [
 				eno: "pd,",
 				eng: "33,"
 			},{
-				eno: "d-sonf",
+				eno: "dsonf",
 				eng: "which reign"
 			},{
-				eno: "viv-div?",
+				eno: "vivdiv?",
 				eng: "in the second angle?"
 			},{
 				eno: "Casarmi",
@@ -841,15 +841,127 @@ var enochian_keys = [
 				eno: "obelisong,",
 				eng: "as pleasant deliverers,"
 			},{
-				eno: "rest-el",
+				eno: "restel",
 				eng: "that you may praise him"
 			},{
 				eno: "aaf",
 				eng: "amongst"
 			},{
-				eno: "nor-molap.",
+				eno: "normolap.",
 				eng: "the sons of men."
 			},
 		]
-	}
+	},{
+		title: "V",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "VI",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "VII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "VIII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "IX",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "X",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XI",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XIII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XIV",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XV",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XVI",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XVII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},{
+		title: "XVIII",
+		content: [
+			{
+				eno: "",
+				eng: ""
+			}
+		]
+	},
 ];
