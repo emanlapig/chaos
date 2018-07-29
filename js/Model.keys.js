@@ -408,7 +408,7 @@ var enochian_keys = [
 				eno: "ozazm",
 				eng: "make me"
 			},{
-				eno: "urelp,",
+				eno: "vrelp,",
 				eng: "a strong see-thing,"
 			},{
 				eno: "lap",
@@ -503,7 +503,7 @@ var enochian_keys = [
 				eno: "ozien;",
 				eng: "by mine own hand;"
 			},{
-				eno: "ds-t",
+				eno: "dst",
 				eng: "which also"
 			},{
 				eno: "brgda",
@@ -682,6 +682,173 @@ var enochian_keys = [
 			},{
 				eno: "qaan.",
 				eng: "of your creation."
+			},
+		]
+	},{
+		title: "IV",
+		content:[
+			{
+				eno: "Othil",
+				eng: "I have set"
+			},{
+				eno: "lasdi",
+				eng: "my feet"
+			},{
+				eno: "babage",
+				eng: "in the south"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "dorpha,",
+				eng: "have looked about me,"
+			},{
+				eno: "gohol,",
+				eng: "saying,"
+			},{
+				eno: "g-chis-ge",
+				eng: "are not"
+			},{
+				eno: "auauago",
+				eng: "the Thunders of Increase"
+			},{
+				eno: "cormp",
+				eng: "numbered"
+			},{
+				eno: "pd,",
+				eng: "33,"
+			},{
+				eno: "d-sonf",
+				eng: "which reign"
+			},{
+				eno: "viv-div?",
+				eng: "in the second angle?"
+			},{
+				eno: "Casarmi",
+				eng: "under whom"
+			},{
+				eno: "oali",
+				eng: "I have placed"
+			},{
+				eno: "mapm",
+				eng: "9639"
+			},{
+				eno: "sobam",
+				eng: "whom"
+			},{
+				eno: "ag",
+				eng: "none"
+			},{
+				eno: "cormpo,",
+				eng: "have yet numbered,"
+			},{
+				eno: "crp-l;",
+				eng: "but one;"
+			},{
+				eno: "casarmg",
+				eng: "in whom"
+			},{
+				eno: "croodzi",
+				eng: "the second beginning of things"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "vgeg;",
+				eng: "wax strong;"
+			},{
+				eno: "dst",
+				eng: "which also"
+			},{
+				eno: "capimali",
+				eng: "successively"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "capimaon:",
+				eng: "the number of time:"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "lonshin",
+				eng: "their powers"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "lo",
+				eng: "the first"
+			},{
+				eno: "cla.",
+				eng: "456."
+			},{
+				eno: "Torgu,",
+				eng: "Arise,"
+			},{
+				eno: "Nor",
+				eng: "you Sons"
+			},{
+				eno: "Quasahi,",
+				eng: "of Pleasure,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "f",
+				eng: "visit"
+			},{
+				eno: "caosga:",
+				eng: "the Earth:"
+			},{
+				eno: "bagle",
+				eng: "for"
+			},{
+				eno: "Zir-ena-iad,",
+				eng: "I am the Lord your God,"
+			},{
+				eno: "dsi",
+				eng: "which is,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "apila.",
+				eng: "liveth."
+			},{
+				eno: "Dooaip",
+				eng: "In the name"
+			},{
+				eno: "Qaal,",
+				eng: "of the Creator,"
+			},{
+				eno: "ZACAR,",
+				eng: "move,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ZAMRAN",
+				eng: "show yourselves"
+			},{
+				eno: "obelisong,",
+				eng: "as pleasant deliverers,"
+			},{
+				eno: "rest-el",
+				eng: "that you may praise him"
+			},{
+				eno: "aaf",
+				eng: "amongst"
+			},{
+				eno: "nor-molap.",
+				eng: "the sons of men."
 			},
 		]
 	}
