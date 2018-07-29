@@ -48,27 +48,7 @@ var M = {
 				}
 				var title = enochian_keys[ M.pages.key.current ].title
 				$( "#key h3.page-title" ).text( title );
-				// bind nav btns
-				$( ".prev-key" ).on( 'click', function(e) {
-					M.pages.key.current = Number( M.pages.key.current ) - 1;
-					V.current_page = false;
-					V.go_to_page( 'key' );
-				});
-				$( ".next-key" ).on( 'click', function(e) {
-					M.pages.key.current = Number( M.pages.key.current ) + 1;
-					V.current_page = false;
-					V.go_to_page( 'key' );
-				});
-				if ( M.pages.key.current == 0 ) {
-					$( ".prev-key" ).addClass( "hidden" );
-				} else {
-					$( ".prev-key" ).removeClass( "hidden" );
-				}
-				if ( M.pages.key.current == enochian_keys.length - 1 ) {
-					$( ".next-key" ).addClass( "hidden" );
-				} else {
-					$( ".next-key" ).removeClass( "hidden" );
-				}
+				M.pages.key.bind_nav_btns();
 			},
 			current: false,
 			strip_punc: function( str ) {
@@ -96,6 +76,7 @@ var M = {
 						}, 10 );
 					}, 500 );
 					M.pages.key.views.current = M.pages.key.views[ to ].index;
+					M.pages.key.bind_nav_btns();
 				} else {
 					setTimeout( function() {
 						$( "#key .view.hidden" ).addClass( "gone" );
@@ -105,6 +86,29 @@ var M = {
 							$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
 						}, 10 );
 					}, 500 );
+				}
+			},
+			bind_nav_btns: function() {
+				// bind nav btns
+				$( ".prev-key" ).on( 'click', function(e) {
+					M.pages.key.current = Number( M.pages.key.current ) - 1;
+					V.current_page = false;
+					V.go_to_page( 'key' );
+				});
+				$( ".next-key" ).on( 'click', function(e) {
+					M.pages.key.current = Number( M.pages.key.current ) + 1;
+					V.current_page = false;
+					V.go_to_page( 'key' );
+				});
+				if ( M.pages.key.current == 0 ) {
+					$( ".prev-key" ).addClass( "hidden" );
+				} else {
+					$( ".prev-key" ).removeClass( "hidden" );
+				}
+				if ( M.pages.key.current == enochian_keys.length - 1 ) {
+					$( ".next-key" ).addClass( "hidden" );
+				} else {
+					$( ".next-key" ).removeClass( "hidden" );
 				}
 			},
 			views: {
