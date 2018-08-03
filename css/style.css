@@ -23,12 +23,6 @@
     .page .view#eng_eno .word .eno {
       font-size: 18px;
       font-family: 'Muli-Bold'; }
-  .page .view.hidden {
-    opacity: 0 !important; }
-  .page .view.gone {
-    display: none !important; }
-  .page .view.show {
-    opacity: 1 !important; }
   .page .view#eng_eno_table .word {
     display: flex;
     width: 75%;
@@ -58,6 +52,12 @@
         font-size: 18px; }
         .page .view#eng_eno_table .word .eng .space.schueler-reg {
           font-size: 24px; }
+  .page .view.hidden {
+    opacity: 0 !important; }
+  .page .view.gone {
+    display: none !important; }
+  .page .view.show {
+    opacity: 1 !important; }
 .page .view-ctrl {
   margin: 1em 0px 2em; }
   .page .view-ctrl .hdr {
@@ -80,7 +80,9 @@
       color: #0B2E4B; }
 .page .btm-nav {
   display: block;
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 40px;
+  cursor: pointer; }
   .page .btm-nav a {
     display: inline-flex;
     text-transform: uppercase;
@@ -100,10 +102,8 @@
     .page .btm-nav a.hidden {
       display: none; }
 
-h3.tall-num {
-  margin-top: -6px; }
-  h3.tall-num:after {
-    content: " ."; }
+h3.tall-num:after {
+  content: " ."; }
 
 .schueler-reg {
   font-family: 'Schueler';

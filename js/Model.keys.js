@@ -417,8 +417,8 @@ var enochian_keys = [
 				eno: "zir",
 				eng: "I am"
 			},{
-				eno: "Ioiad.",
-				eng: "of Him that liveth forever."
+				eno: "Ioiad",
+				eng: "of Him that liveth forever"
 			},
 		]
 	},{
@@ -578,7 +578,7 @@ var enochian_keys = [
 				eno: "de",
 				eng: "of"
 			},{
-				eno: "g-netaab,",
+				eno: "gnetaab,",
 				eng: "your governments,"
 			},{
 				eno: "vaun",
@@ -742,7 +742,7 @@ var enochian_keys = [
 				eno: "cormpo,",
 				eng: "have yet numbered,"
 			},{
-				eno: "crpl;",
+				eno: "crp-l;",
 				eng: "but one;"
 			},{
 				eno: "casarmg",
@@ -855,16 +855,313 @@ var enochian_keys = [
 		title: "V",
 		content: [
 			{
-				eno: "",
-				eng: ""
-			}
+				eno: "Sapah",
+				eng: "The Mighty Sounds"
+			},{
+				eno: "zimii",
+				eng: "have entered"
+			},{
+				eno: "duib,",
+				eng: "into the third angle,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "noas",
+				eng: "are become"
+			},{
+				eno: "taquanis",
+				eng: "as olives"
+			},{
+				eno: "Adroch,",
+				eng: "in the Olive Mount,"
+			},{
+				eno: "dorphal",
+				eng: "looking with gladness"
+			},{
+				eno: "Caosg,",
+				eng: "upon the Earth,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "faonts",
+				eng: "dwelling"
+			},{
+				eno: "peripsol",
+				eng: "in the brightness of the heavens"
+			},{
+				eno: "tablior;",
+				eng: "as continual comforters;"
+			},{
+				eno: "casarm",
+				eng: "unto whom"
+			},{
+				eno: "amipzi",
+				eng: "I fastened"
+			},{
+				eno: "nazarth",
+				eng: "pillars of gladness"
+			},{
+				eno: "af,",
+				eng: "19,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "dlugar",
+				eng: "gave them"
+			},{
+				eno: "zizop",
+				eng: "vessels"
+			},{
+				eno: "zlida",
+				eng: "to water"
+			},{
+				eno: "Caosgi",
+				eng: "the Earth"
+			},{
+				eno: "toltorgi;",
+				eng: "with her creatures;"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "zchis",
+				eng: "they are"
+			},{
+				eno: "esiasch",
+				eng: "the brothers"
+			},{
+				eno: "L",
+				eng: "of the first"
+			},{
+				eno: "taviu,",
+				eng: "and second,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ioad",
+				eng: "the beginning"
+			},{
+				eno: "thild,",
+				eng: "of their own seats,"
+			},{
+				eno: "ds",
+				eng: "which"
+			},{
+				eno: "hubar",
+				eng: "are garnished with continually burning lamps"
+			},{
+				eno: "peoal,",
+				eng: "69636,"
+			},{
+				eno: "soba",
+				eng: "whose"
+			},{
+				eno: "cormfa",
+				eng: "numbers"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "la,",
+				eng: "the first,"
+			},{
+				eno: "vls,",
+				eng: "the ends,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "qcocasb.",
+				eng: "the contents of time."
+			},{
+				eno: "Ca",
+				eng: "Therefore"
+			},{
+				eno: "niis",
+				eng: "come you"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "darbs",
+				eng: "obey"
+			},{
+				eno: "qaas;",
+				eng: "your creation;"
+			},{
+				eno: "fetharzi",
+				eng: "visit us in peace"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "bliora;",
+				eng: "comfort;"
+			},{
+				eno: "iaial",
+				eng: "conclude us"
+			},{
+				eno: "ednas",
+				eng: "as receivers"
+			},{
+				eno: "cicles.",
+				eng: "of your mysteries."
+			},{
+				eno: "Bagle?",
+				eng: "For why?"
+			},{
+				eno: "Geiad",
+				eng: "Our Lord and Master"
+			},{
+				eno: "iL.",
+				eng: "is all one."
+			},
 		]
 	},{
 		title: "VI",
 		content: [
 			{
-				eno: "",
-				eng: ""
+				eno: "Gah",
+				eng: "The spirits"
+			},{
+				eno: "sdiu",
+				eng: "of the fourth angle"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "em,",
+				eng: "nine,"
+			},{
+				eno: "micalzo",
+				eng: "mighty"
+			},{
+				eno: "pilzin;",
+				eng: "in the firmaments of waters;"
+			},{
+				eno: "sobam",
+				eng: "whom"
+			},{
+				eno: "El",
+				eng: "the First"
+			},{
+				eno: "harg",
+				eng: "hath planted"
+			},{
+				eno: "mir",
+				eng: "as a torment"
+			},{
+				eno: "babalon",
+				eng: "to the wicked"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "obloc",
+				eng: "a garland"
+			},{
+				eno: "samvelg,",
+				eng: "to the righteous,"
+			},{
+				eno: "dlugar",
+				eng: "giving unto them"
+			},{
+				eno: "malprg",
+				eng: "fiery darts"
+			},{
+				eno: "arcaosgi,",
+				eng: "to van the Earth,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "acam",
+				eng: "7699"
+			},{
+				eno: "canal;",
+				eng: "continual workmen;"
+			},{
+				eno: "sobolzar",
+				eng: "whose courses"
+			},{
+				eno: "fbliard",
+				eng: "visit with comfort"
+			},{
+				eno: "Caosgi,",
+				eng: "the Earth,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "anetab",
+				eng: "in government"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "miam",
+				eng: "continuance"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "viv",
+				eng: "the second"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "D.",
+				eng: "the third."
+			},{
+				eno: "Darsar,",
+				eng: "Wherefore,"
+			},{
+				eno: "solpeth",
+				eng: "harken"
+			},{
+				eno: "bien;",
+				eng: "unto my voice;"
+			},{
+				eno: "brita",
+				eng: "I have talked of you"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ZACAM",
+				eng: "I move you"
+			},{
+				eno: "gmicalzo,",
+				eng: "in power and presence,"
+			},{
+				eno: "sobhaath",
+				eng: "whose works"
+			},{
+				eno: "trian",
+				eng: "shall be"
+			},{
+				eno: "luiahe",
+				eng: "a song of honor"
+			},{
+				eno: "odecrin",
+				eng: "and the praise"
+			},{
+				eno: "MAD",
+				eng: "of your God"
+			},{
+				eno: "qaaon.",
+				eng: "in your creation."
 			}
 		]
 	},{

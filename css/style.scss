@@ -33,15 +33,6 @@
 				}
 			}
 		}
-		&.hidden {
-			opacity: 0!important;
-		}
-		&.gone {
-			display: none!important;
-		}
-		&.show {
-			opacity: 1!important;
-		}
 		&#eng_eno_table {
 			.word {
 				display: flex;
@@ -81,6 +72,15 @@
 				}
 			}
 		}
+		&.hidden {
+			opacity: 0!important;
+		}
+		&.gone {
+			display: none!important;
+		}
+		&.show {
+			opacity: 1!important;
+		}
 	}
 	.view-ctrl {
 		margin: 1em 0px 2em;
@@ -107,6 +107,8 @@
 	.btm-nav {
 		display: block;
 		margin-top: 40px;
+		padding-bottom: 40px;
+		cursor: pointer;
 		a {
 			display: inline-flex;
 			text-transform: uppercase;
@@ -136,7 +138,6 @@
 }
 
 h3.tall-num {
-	margin-top: -6px;
 	&:after {
 		content: " .";
 	}
