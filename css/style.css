@@ -12,17 +12,6 @@
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
   transition: opacity 0.5s ease-in-out 0s; }
-  .page .view#eng_eno .word {
-    display: inline-block;
-    margin: 8px 10px; }
-    .page .view#eng_eno .word > div {
-      display: block;
-      text-align: center; }
-    .page .view#eng_eno .word .eng {
-      color: #fff; }
-    .page .view#eng_eno .word .eno {
-      font-size: 18px;
-      font-family: 'Muli-Bold'; }
   .page .view#eng_eno_table .word {
     display: flex;
     width: 75%;
@@ -42,7 +31,7 @@
         display: inline-block;
         font-size: 18px; }
         .page .view#eng_eno_table .word .eno .eno1.schueler-reg {
-          font-size: 24px; }
+          font-size: 26px; }
     .page .view#eng_eno_table .word .eng {
       width: 45%;
       color: #fff; }
@@ -52,6 +41,19 @@
         font-size: 18px; }
         .page .view#eng_eno_table .word .eng .space.schueler-reg {
           font-size: 24px; }
+  .page .view#eng_eno .word {
+    display: inline-block;
+    margin: 8px 10px; }
+    .page .view#eng_eno .word > div {
+      display: block;
+      text-align: center; }
+    .page .view#eng_eno .word .eng {
+      color: #fff; }
+    .page .view#eng_eno .word .eno {
+      font-size: 18px;
+      font-family: 'Muli-Bold'; }
+  .page .view#eno_only .schueler-reg {
+    font-size: 26px; }
   .page .view.hidden {
     opacity: 0 !important; }
   .page .view.gone {

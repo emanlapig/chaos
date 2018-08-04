@@ -16,23 +16,6 @@
 		width: 100%;
 		opacity: 1;
 		@include transition( opacity, .5s, ease-in-out, 0s );
-		&#eng_eno {
-			.word {
-				display: inline-block;
-				margin: 8px 10px;
-				> div {
-					display: block;
-					text-align: center;
-				}
-				.eng {
-					color: #fff;
-				}
-				.eno {
-					font-size: 18px;
-					font-family: 'Muli-Bold';
-				}
-			}
-		}
 		&#eng_eno_table {
 			.word {
 				display: flex;
@@ -54,7 +37,7 @@
 						display: inline-block;
 						font-size: 18px;
 						&.schueler-reg {
-							font-size: 24px;
+							font-size: 26px;
 						}
 					}
 				}
@@ -70,6 +53,28 @@
 						}
 					}
 				}
+			}
+		}
+		&#eng_eno {
+			.word {
+				display: inline-block;
+				margin: 8px 10px;
+				> div {
+					display: block;
+					text-align: center;
+				}
+				.eng {
+					color: #fff;
+				}
+				.eno {
+					font-size: 18px;
+					font-family: 'Muli-Bold';
+				}
+			}
+		}
+		&#eno_only {
+			.schueler-reg {
+				font-size: 26px;
 			}
 		}
 		&.hidden {

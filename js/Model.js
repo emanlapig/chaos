@@ -56,6 +56,7 @@ var M = {
 			},
 			go_to_view: function( to ) {
 				M.pages.key.views[ to ].init();
+				M.pages.settings.toggle_eno_font();
 				if ( M.pages.key.views.current != M.pages.key.views[ to ].index ) {
 					$( "#key .view *" ).unbind();
 					var from = $( "#key .view" );
@@ -64,7 +65,6 @@ var M = {
 							$( from[i] ).removeClass( "show" ).addClass( "hidden" );
 						}
 					}
-					M.pages.settings.toggle_eno_font();
 					setTimeout( function() {
 						$( "#key .view.hidden" ).addClass( "gone" );
 						$( [ "#", to ].join( "" ) ).removeClass( "gone" );

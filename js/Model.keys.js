@@ -1168,9 +1168,168 @@ var enochian_keys = [
 		title: "VII",
 		content: [
 			{
-				eno: "",
-				eng: ""
-			}
+				eno: "Raas",
+				eng: "The east"
+			},{
+				eno: "isalman",
+				eng: "is a house"
+			},{
+				eno: "paradizod",
+				eng: "of virgins"
+			},{
+				eno: "oecrimi",
+				eng: "singing praises"
+			},{
+				eno: "aao",
+				eng: "amongst"
+			},{
+				eno: "Ialpirgah,",
+				eng: "the Flames of the first glory,"
+			},{
+				eno: "quiin",
+				eng: "wherein"
+			},{
+				eno: "Enay",
+				eng: "the Lord"
+			},{
+				eno: "butmon,",
+				eng: "hath opened his mouth,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "inoas",
+				eng: "they are become"
+			},{
+				eno: "ni",
+				eng: "28"
+			},{
+				eno: "paradial",
+				eng: "living dwellings"
+			},{
+				eno: "casarmg",
+				eng: "in whom"
+			},{
+				eno: "vgear",
+				eng: "the strength of men"
+			},{
+				eno: "chirlan;",
+				eng: "rejoiceth;"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "zonac",
+				eng: "they are appareled"
+			},{
+				eno: "luciftian,",
+				eng: "with ornaments of brightness,"
+			},{
+				eno: "cors",
+				eng: "such"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "vaul",
+				eng: "work"
+			},{
+				eno: "zirn",
+				eng: "wonders"
+			},{
+				eno: "tolhami;",
+				eng: "on all creatures;"
+			},{
+				eno: "soba",
+				eng: "whose"
+			},{
+				eno: "londoh",
+				eng: "kingdoms"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "miam",
+				eng: "continuance"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "tad",
+				eng: "as the third"
+			},{
+				eno: "odes,",
+				eng: "and fourth,"
+			},{
+				eno: "vmadea",
+				eng: "strong towers"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "pibliar,",
+				eng: "places of comfort,"
+			},{
+				eno: "othilrit",
+				eng: "the seats of mercy"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "miam.",
+				eng: "continuance."
+			},{
+				eno: "Cnoquol",
+				eng: "O you Servants"
+			},{
+				eno: "Rit,",
+				eng: "of Mercy,"
+			},{
+				eno: "ZACAR,",
+				eng: "move,"
+			},{
+				eno: "ZAMRAN,",
+				eng: "appear,"
+			},{
+				eno: "oecrimi",
+				eng: "sing praises"
+			},{
+				eno: "Qadah,",
+				eng: "unto the Creator,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "omicaolz",
+				eng: "be mighty"
+			},{
+				eno: "aaiom;",
+				eng: "amongst us;"
+			},{
+				eno: "bagle",
+				eng: "for"
+			},{
+				eno: "papnor",
+				eng: "to this remembrance"
+			},{
+				eno: "idlugam",
+				eng: "is given"
+			},{
+				eno: "lonshi,",
+				eng: "power,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "vmplif",
+				eng: "our strength"
+			},{
+				eno: "vgegi",
+				eng: "waxeth strong"
+			},{
+				eno: "Bigliad.",
+				eng: "in our Comforter."
+			},
 		]
 	},{
 		title: "VIII",
