@@ -40,7 +40,7 @@ var enochian_keys = [
 				eno: "Ror",
 				eng: "the Sun"
 			},{
-				eno: "I",
+				eno: "i",
 				eng: "is"
 			},{
 				eno: "ta",
@@ -1255,11 +1255,17 @@ var enochian_keys = [
 				eno: "chis",
 				eng: "are"
 			},{
-				eno: "tad",
-				eng: "as the third"
+				eno: "ta",
+				eng: "as"
 			},{
-				eno: "odes,",
-				eng: "and fourth,"
+				eno: "D",
+				eng: "the third"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "es,",
+				eng: "fourth,"
 			},{
 				eno: "vmadea",
 				eng: "strong towers"
@@ -1335,8 +1341,200 @@ var enochian_keys = [
 		title: "VIII",
 		content: [
 			{
-				eno: "",
-				eng: ""
+				eno: "Bazmelo,",
+				eng: "The midday the first,"
+			},{
+				eno: "I",
+				eng: "is"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "piripson",
+				eng: "the third heaven"
+			},{
+				eno: "oln",
+				eng: "made"
+			},{
+				eno: "nazavabh",
+				eng: "of pillars of hyacinth"
+			},{
+				eno: "ox:",
+				eng: "26:"
+			},{
+				eno: "casarmg",
+				eng: "in whom"
+			},{
+				eno: "Vran",
+				eng: "the Elders"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "vgeg;",
+				eng: "became strong;"
+			},{
+				eno: "ds",
+				eng: "which"
+			},{
+				eno: "abramg",
+				eng: "I have prepared"
+			},{
+				eno: "baltoha,",
+				eng: "for my own righteousness,"
+			},{
+				eno: "goho",
+				eng: "saith"
+			},{
+				eno: "Iad;",
+				eng: "the Lord;"
+			},{
+				eno: "soba",
+				eng: "whose"
+			},{
+				eno: "mian",
+				eng: "long continuance"
+			},{
+				eno: "trian",
+				eng: "shall be"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "lolcis",
+				eng: "bucklers"
+			},{
+				eno: "abaiuonin,",
+				eng: "to the stooping Dragon,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "aziagier",
+				eng: "like unto the harvest"
+			},{
+				eno: "rior.",
+				eng: "of a widow."
+			},{
+				eno: "Irgil",
+				eng: "How many"
+			},{
+				eno: "chis",
+				eng: "are"
+			},{
+				eno: "da",
+				eng: "there"
+			},{
+				eno: "ds",
+				eng: "which"
+			},{
+				eno: "paaox",
+				eng: "remain"
+			},{
+				eno: "busd",
+				eng: "in the glory"
+			},{
+				eno: "Caosgo,",
+				eng: "of the Earth,"
+			},{
+				eno: "ds",
+				eng: "which"
+			},{
+				eno: "chis,",
+				eng: "are,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "ipuran",
+				eng: "shall not see"
+			},{
+				eno: "teloah,",
+				eng: "death,"
+			},{
+				eno: "cacarg",
+				eng: "until"
+			},{
+				eno: "oisalman",
+				eng: "this house"
+			},{
+				eno: "loncho",
+				eng: "fall"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "Vouina",
+				eng: "the Dragon"
+			},{
+				eno: "carbaf!",
+				eng: "sink!"
+			},{
+				eno: "Niiso,",
+				eng: "Come away,"
+			},{
+				eno: "bagle",
+				eng: "for"
+			},{
+				eno: "Avavago",
+				eng: "the Thunders"
+			},{
+				eno: "gohon;",
+				eng: "have spoken;"
+			},{
+				eno: "niiso",
+				eng: "come away,"
+			},{
+				eno: "bagle",
+				eng: "for"
+			},{
+				eno: "momao",
+				eng: "the crowns"
+			},{
+				eno: "Siaion",
+				eng: "of the Temple"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "mabza",
+				eng: "the coat"
+			},{
+				eno: "Jadoiasmomar,",
+				eng: "of Him that Is, and Was, and Shall Be Crowned,"
+			},{
+				eno: "poilp.",
+				eng: "are divided."
+			},{
+				eno: "Niis,",
+				eng: "Come away,"
+			},{
+				eno: "ZAMRAN",
+				eng: "appear"
+			},{
+				eno: "ciaofi",
+				eng: "to the terror"
+			},{
+				eno: "Caosgo,",
+				eng: "of the Earth,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "bliors,",
+				eng: "to our comfort,"
+			},{
+				eno: "od",
+				eng: "and"
+			},{
+				eno: "corsi",
+				eng: "of such"
+			},{
+				eno: "ta",
+				eng: "as"
+			},{
+				eno: "abramig,",
+				eng: "are prepared."
 			}
 		]
 	},{
